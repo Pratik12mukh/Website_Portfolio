@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #1E2C2E; /* Charleston Green */
+    color: #F5D784; /* Buff for text */
+    line-height: 1.6;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #29443A; /* Crayola's Outer Space */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Hover effect on logo */
+.logo h1 {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.logo h1:hover {
+    color: #F7A61C; /* Highlight color when hovered */
+}
+
+/* Parallax effect */
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#portfolio.parallax {
+    background-image: url('path/to/portfolio-background.jpg'); /* Replace with actual image path */
+    height: 600px; /* Adjust height as necessary */
+}
+
+#projects.parallax {
+    background-image: url('path/to/projects-background.jpg'); /* Replace with actual image path */
+    height: 600px; /* Adjust height as necessary */
+}
+
+/* Existing Styles */
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #F5D784; /* Buff for nav links */
+    font-weight: bold;
+    transition: color 0.4s ease, transform 0.4s ease;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li a:hover {
+    color: #F7A61C; /* Crayola's Bright Yellow */
+    transform: translateY(-3px);
+}
+
+/* Typography Improvements */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* Main Header */
+.main-header {
+    background-color: #1E2C2E; /* Charleston Green */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F5D784; /* Buff for header text */
+}
+
+/* Section Styling */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #29443A; /* Crayola's Outer Space */
+    color: #F5D784; /* Buff for section text */
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #F7A61C; /* Crayola's Bright Yellow for section titles */
+}
+
+/* Portfolio Links */
+.portfolio-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.portfolio-card {
+    background-color: #1E2C2E; /* Charleston Green */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Lighter shadow */
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Unified timing */
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Enhanced hover shadow */
+    background-color: #2B5840; /* Deep Moss Green on hover */
+}
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background-color: #1E2C2E;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 300px;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    background-color: #2B5840; /* Deep Moss Green on hover */
+}
+
+.project-card i {
+    color: #F7A61C; /* Crayola's Bright Yellow */
+    margin-bottom: 10px;
+}
+
+/* Skills with Progress Bars */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.skill-item {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.skill-item i {
+    color: #F7A61C; /* Crayola's Bright Yellow for skill icons */
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #F7A61C; /* Crayola's Bright Yellow for progress */
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+/* Education, Experience, Blog Sections */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+ul li i {
+    margin-right: 10px;
+    color: #F7A61C; /* Crayola's Bright Yellow */
+}
+
+a {
+    text-decoration: none;
+    color: #F5D784; /* Buff for links */
+    font-weight: bold;
+    transition: color 0.4s ease;
+}
+
+a:hover {
+    color: #F7A61C; /* Crayola's Bright Yellow */
+}
+
+/* Work Experience Section */
+.work-container {
+    margin-top: 20px;
+}
+
+.work-container h3 {
+    font-size: 1.5rem;
+    color: #F5D784; /* Buff for job titles */
+    margin-bottom: 10px;
+}
+
+.work-container p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.work-container ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.work-container ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* About Section */
+.about-container {
+    max-width: 1300px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 30px; /* Inner spacing */
+    background-color: #1E2C2E; /* Charleston Green background */
+    color: #F5D784; /* Buff for text */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.about-text {
+    font-size: 1.5rem; /* Font size */
+    line-height: 1.7; /* Improved readability */
+    font-weight: 400; /* Medium weight for better readability */
+    margin: 20px 0; /* Adds space around the text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-container {
+        max-width: 90%; /* Adjusts container width for smaller screens */
+        padding: 20px; /* Reduces padding for smaller screens */
+    }
+    
+    .portfolio-links, .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-card, .portfolio-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-container, .contact-form {
+        max-width: 85%; /* Better fit for larger tablets */
+    }
+
+    .portfolio-links, .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-card, .portfolio-card {
+        width: 100%;
+        max-width: 450px; /* Adjust for larger mobile screens */
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #1E2C2E; /* Charleston Green for footer */
+    color: #F5D784;
+    text-align: center;
+    padding: 20px;
+}
